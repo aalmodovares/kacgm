@@ -1,0 +1,43 @@
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.coverage
+htmlcov/
+build/
+dist/
+*.egg-info/
+pip-wheel-metadata/
+
+# Editors
+.idea/
+.ipynb_checkpoints/
+.vscode/
+
+# Virtual environments
+.venv/
+venv/
+env/
+.conda/
+
+# Outputs and generated artifacts
+outputs/**
+!outputs/
+!outputs/**/
+!outputs/**/.gitkeep
+
+# Local environment and temporary files
+.env
+.env.*
+*.tmp
+*.log
+*.bak
+*.swp
+*.sqlite
+*.sqlite3
+*.zip
+.DS_Store
+Thumbs.db

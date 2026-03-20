@@ -1,0 +1,6 @@
+experiment: sachs
+n: 2000
+n_realizations: 10
+models: [kan, kaam, anm, dbcm, flow]
+noise_settings: [additive, nonadditive]
+

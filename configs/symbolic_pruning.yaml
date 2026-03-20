@@ -1,0 +1,7 @@
+experiment: symbolic_pruning
+n: 5000
+seed: 1234
+epochs: 10000
+discrete: false
+include_orig_formula: true
+

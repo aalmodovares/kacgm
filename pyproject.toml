@@ -1,0 +1,47 @@
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "ka-cgm"
+version = "0.1.0"
+description = "Kolmogorov-Arnold causal generative model experiments and analysis."
+readme = "README.md"
+requires-python = ">=3.10"
+dependencies = [
+    "causalflows",
+    "cdt",
+    "dowhy",
+    "ipywidgets",
+    "joblib",
+    "jupyter",
+    "matplotlib",
+    "networkx",
+    "numpy",
+    "pandas",
+    "pykan==0.2.8",
+    "pytest",
+    "pyyaml",
+    "scikit-learn",
+    "scipy",
+    "seaborn",
+    "statsmodels",
+    "sympy",
+    "tabulate",
+    "torch",
+    "tqdm",
+    "tueplots",
+]
+
+[tool.setuptools]
+package-dir = {"" = "src"}
+
+[tool.setuptools.packages.find]
+where = ["src"]
+include = ["datasets*", "models*", "plotting*", "utils*"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+pythonpath = ["src"]
+addopts = "-q"
+

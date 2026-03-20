@@ -1,0 +1,16 @@
+experiment: continuous
+datasets:
+  - 3-chain-linear
+  - 3-chain-non-linear
+  - 4-chain-linear
+  - 5-chain-linear
+  - collider-linear
+  - fork-linear
+  - fork-non-linear
+  - simpson-non-linear
+  - simpson-symprod
+  - triangle-linear
+  - triangle-non-linear
+n_values: [1000, 100, 10]
+models: [kan, kaam, anm, dbcm, flow]
+
