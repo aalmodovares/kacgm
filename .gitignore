@@ -41,3 +41,4 @@ outputs/**
 *.zip
 .DS_Store
 Thumbs.db
+data/raw/cardio.csv

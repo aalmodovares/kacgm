@@ -2,7 +2,13 @@
 
 # KaCGM: Kolmogorov-Arnold Causal Generative Models
 
-Refactored codebase for the experiments, case studies, and analysis notebooks associated with the KaCGM paper.
+Codebase for the experiments, case studies, and analysis notebooks associated with the KaCGM paper.
+
+> [!IMPORTANT]
+> Please, note that this is a refactored version of the first experimental code, so it can contain minimal errors that we haven´t found. If
+> you find any issue, please, report it to us by opening an issue in the repository or contact me to
+> <alejandro.almodovar@upm.es>
+>  We will be happy to fix it as soon as possible.
 
 ## Repository Layout
 
@@ -131,7 +137,9 @@ pytest
 
 ## Notes
 
-- `data/raw/cardio.csv` remains versioned because it is an input dataset, not a generated result.
+- The cardio dataset is not included in the repository, but you can find it in the original paper by
+[Kyriaocu et al.](https://www.sciencedirect.com/science/article/pii/S0196064422005789). The dataset should be stored as
+`data/raw/cardio.csv` for the runnables to work.
 - `outputs/` is kept as a skeleton in the repository so all runnables share a predictable output layout.
 
 ## Interface
@@ -139,4 +147,18 @@ There is an online interface that you can check out to observe the causal effect
 the semi-synthetic Sachs dataset and in the cardio case study. You can find it at [this link](https://huggingface.co/spaces/marElizo/kan4scminterface).
 
 ## Citation
-Still pending.
+
+If you find this code useful for your research, please consider citing the paper:
+
+```bibtex
+@misc{almodovar2026kolmogorovarnoldcausalgenerativemodels,
+      title={Kolmogorov-Arnold causal generative models}, 
+      author={Alejandro Almodóvar and Mar Elizo and Patricia A. Apellániz and Santiago Zazo and Juan Parras},
+      year={2026},
+      eprint={2603.20184},
+      archivePrefix={arXiv},
+      primaryClass={cs.LG},
+      url={https://arxiv.org/abs/2603.20184}, 
+}
+```
+
